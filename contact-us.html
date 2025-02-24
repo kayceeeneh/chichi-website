@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chichi</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+
+    <script>
+        function initMap() {
+            var location = { lat: 52.9548, lng: -1.1581 }; // Coordinates for NG1, Nottingham, UK
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <p class="hero" ></p>
+    </section>
+    <section class="main-content container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to make a reservation, please feel free to contact us using the information below.</p>
+
+        <div class="contact-info">
+            <div>
+                <h3>Address</h3>
+                <p>123 Restaurant Street,<br> NG1, Nottingham,<br> UK</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>+44 1234 567890</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>info@chichi.com</p>
+            </div>
+        </div>
+
+        <div id="map" class="map"></div>
+    </section>
+
+  				<!-- Footer -->
+                  <section id="footer">
+                    <section>
+                        
+                    </section>
+                    <section>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; Chi-Chi Kitchen</li><li>Design: <a href="http://octuriontech.com">Kayc</a></li>
+                        </ul>
+                    </section>
+                </section>
+
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap"></script>
+</body>
+
+</html>    
